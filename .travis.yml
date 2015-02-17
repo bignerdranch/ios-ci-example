@@ -1,0 +1,17 @@
+language: objective-c
+env:
+    global:
+        - APP_NAME="ContinuousDistributionExample"
+        - XCODE_SCHEME="$APP_NAME"
+        - PROJECT_DIRECTORY="$PWD/"
+        
+before_install:
+
+before_script:
+    
+script:
+    - xcodebuild -workspace ContinuousDistributionExample.xcworkspace -scheme ContinuousDistributionExample -sdk iphonesimulator
+after_success:
+    
+after_script:
+    
